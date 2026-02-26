@@ -1,6 +1,6 @@
 class HomePage {
   visit() {
-    cy.visit('/');
+    cy.visit('https://www.wingo.com/');
   }
 
   setOrigin(text) {
