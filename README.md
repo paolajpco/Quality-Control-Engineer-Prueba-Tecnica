@@ -31,7 +31,6 @@ Este repositorio contiene una **automatización con Cypress y JavaScript** para 
 | CP05   | Búsqueda con fechas inválidas                           | Verificar que el sistema bloquea o muestra error al ingresar fechas inválidas     |
 | CP06   | Manejo de errores de red o carga lentitud               | Validar que la UI muestra un mensaje adecuado si falla la búsqueda                |
 
-> 💡 Puedes ampliar estos casos con diferentes combinaciones (distintos orígenes/destinos, múltiples pasajeros, etc.).
 
 ---
 
