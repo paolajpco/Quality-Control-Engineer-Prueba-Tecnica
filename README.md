@@ -77,9 +77,10 @@ Quality-Control-Engineer-_-Prueba-T-cnica/
 
 Antes de ejecutar las pruebas, asegúrate de tener instalado:
 
-* 👉 Node.js (v14 o superior)
-* 👉 npm o Yarn
-* 👉 Navegador soportado por Cypress (Chrome, Edge, Firefox)
+* Node.js (v14 o superior)
+* npm o Yarn
+* Cypress 
+* Navegador soportado por Cypress (Chrome, Edge, Firefox)
 
 ---
 
@@ -99,7 +100,8 @@ git clone https://github.com/paolajpco/Quality-Control-Engineer-_-Prueba-T-cnica
 
 ```bash
 cd tu-repo
-npm install
+npm install, Validar npm -v
+npm install cypress --save-dev , Validar npx cypress --version
 ```
 
 ---
