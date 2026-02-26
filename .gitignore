@@ -1,0 +1,10 @@
+node_modules/
+node_modules/
+.env
+.DS_Store
+/.vscode/
+cypress/videos/
+cypress/screenshots/
+mochawesome-report/
+dist/
+build/
