@@ -87,7 +87,8 @@ Antes de ejecutar las pruebas, asegúrate de tener instalado:
 ### 1. Clonar este repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repo.git
+git clone [https://github.com/tu-usuario/tu-repo.git](https://github.com/paolajpco/Quality-Control-Engineer-_-Prueba-T-cnica)
+git clone https://github.com/paolajpco/Quality-Control-Engineer-_-Prueba-T-cnica
 ```
 
 > 🔁 *Reemplaza `tu-usuario/tu-repo` por el enlace real al repositorio.*
