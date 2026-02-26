@@ -1,5 +1,24 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "personas": [
+    {
+      "sexo": "Femenino",
+      "nombres": "María Fernanda",
+      "primer_apellido": "García",
+      "segundo_apellido": "López",
+      "numero_documento": "1234567890",
+      "fecha_nacimiento": "2005-08-15",
+      "nacionalidad": "Colombiana",
+      "pais_residencia": "Colombia"
+    },
+    {
+      "sexo": "Masculino",
+      "nombres": "Juan Carlos",
+      "primer_apellido": "Pérez",
+      "segundo_apellido": "Rodríguez",
+      "numero_documento": "0987654321",
+      "fecha_nacimiento": "2003-04-10",
+      "nacionalidad": "Colombiana",
+      "pais_residencia": "Colombia"
+    }
+  ]
 }
