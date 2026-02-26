@@ -10,13 +10,14 @@ Este repositorio contiene una **automatización con Cypress y JavaScript** para 
 ## 📌 📍 Escenario automatizado a probar
 
 1. Abrir la página de búsqueda de vuelos.
-2. Ingresar un origen y un destino válidos.
+2. Ingresar un origen y un destino válidos.(Bogotá, Cali)
 3. Seleccionar fechas de ida y regreso.
 4. Aplicar filtros de búsqueda si aplica.
-5. Identificar y seleccionar **el vuelo de ida más económico** y **el vuelo de regreso más económico**.
-6. Completar los formularios de datos de los viajeros (nombre, documento, correo, etc.).
+5. Identificar y seleccionar **el vuelo de ida más económico** y **el vuelo de regreso más económico**.(Plan Elige el vuelo y la tarifa que se ajuste a tu escapada
+Elige la tarifa más conveniente para tu viaje, ésta se aplicará a todos los viajeros de la reserva. Plan Go Basic)
+6. Completar los formularios de datos de los viajeros (sexo,nombre,apellidos, fecha de nacimiento, documento, pais, etc.).
 7. Verificar que la selección y los datos se guardan correctamente.
-8. Validar que el proceso continúa sin errores hasta la página de confirmación o pago.
+8. Validar que el proceso continúa 
 
 ---
 
