@@ -4,14 +4,14 @@ class HomePage {
   }
 
   setOrigin(text) {
-    cy.get('[data-testid="origin-input"], input[name*=origin], input[placeholder*="Origen"], .origin-input')
+    cy.get('[data-testid="departure-location"], input[name*=origin], input[placeholder*="Origen"], .origin-input')
       .first()
       .clear()
       .type(text);
   }
 
   setDestination(text) {
-    cy.get('[data-testid="destination-input"], input[name*=destination], input[placeholder*="Destino"], .destination-input')
+    cy.get('input[placeholder*="Selecciona un destino"]')
       .first()
       .clear()
       .type(text);

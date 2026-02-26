@@ -4,7 +4,7 @@ import passenger from '../pages/passengerPage';
 
 describe('Search flight flow', () => {
 
-  it('searches flights and fills passenger data', () => {
+  it('Test 1 searches flights and fills passenger data', () => {
 
     cy.viewport(1280, 800);
     home.visit();
