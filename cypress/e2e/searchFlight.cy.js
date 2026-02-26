@@ -9,7 +9,7 @@ describe('Search flight flow', () => {
 
     // fill search form
     home.setOrigin('Bogotá');
-    home.setDestination('Medellín');
+    home.setDestination('Cali');
     home.setDepartDate('2026-03-15');
     home.setReturnDate('2026-03-20');
     home.openPassengers();
