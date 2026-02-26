@@ -11,7 +11,7 @@ describe('Search flight flow', () => {
     home.setOrigin('Bogotá');
     home.setDestination('Cali');
     home.setDepartDate('2026-03-15');
-    home.setReturnDate('2026-03-20');
+    home.setReturnDate('2026-04-20');
     home.openPassengers();
     home.selectAdults(2);
     home.search();
