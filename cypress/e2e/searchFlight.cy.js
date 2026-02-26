@@ -3,11 +3,13 @@ import results from '../pages/resultsPage';
 import passenger from '../pages/passengerPage';
 
 describe('Search flight flow', () => {
+
   it('searches flights and fills passenger data', () => {
+
     cy.viewport(1280, 800);
     home.visit();
 
-    // fill search form
+    // Fill search form
     home.setOrigin('Bogotá');
     home.setDestination('Cali');
     home.setDepartDate('2026-03-15');
@@ -16,15 +18,25 @@ describe('Search flight flow', () => {
     home.selectAdults(2);
     home.search();
 
-    // wait and select
+    // Wait and select flight
     results.waitForResults();
     results.selectFirstResult();
 
-    // fill passenger and continue
-    passenger.fillPassenger({ firstName: 'Test', lastName: 'User', doc: '12345678' });
+    // Fill passenger data
+    passenger.fillPassenger({
+      sexo: 'Femenino',
+      nombres: 'Test',
+      apellidos: 'User',
+      numero_documento: '12345678',
+      fecha_nacimiento: '2000-01-01',
+      nacionalidad: 'Colombiana',
+      pais_residencia: 'Colombia'
+    });
+
     passenger.continue();
 
-    // verify we progressed to a passenger/checkout page
+    // Verify progression
     cy.url().should('match', /passenger|checkout|booking/i);
   });
+
 });
