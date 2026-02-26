@@ -1,6 +1,6 @@
-const home = require('../pages/homePage');
-const results = require('../pages/resultsPage');
-const passenger = require('../pages/passengerPage');
+import home from '../pages/homePage';
+import results from '../pages/resultsPage';
+import passenger from '../pages/passengerPage';
 
 describe('Search flight flow', () => {
   it('searches flights and fills passenger data', () => {
