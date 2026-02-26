@@ -23,15 +23,13 @@ describe('Search flight flow', () => {
     results.selectFirstResult();
 
     // Fill passenger data
-    passenger.fillPassenger({
-      sexo: 'Femenino',
-      nombres: 'Test',
-      apellidos: 'User',
-      numero_documento: '12345678',
-      fecha_nacimiento: '2000-01-01',
-      nacionalidad: 'Colombiana',
-      pais_residencia: 'Colombia'
-    });
+cy.fixture('personas.json').then((data) => {
+
+  data.personas.forEach((persona, index) => {
+    passenger.fillPassenger(persona, index);
+  });
+
+});
 
     passenger.continue();
 

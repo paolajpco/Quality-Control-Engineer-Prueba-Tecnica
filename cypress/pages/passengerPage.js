@@ -1,64 +1,37 @@
 class PassengerPage {
 
-  fillPassenger({
-    sexo,
-    nombres,
-    apellidos,
-    numero_documento,
-    fecha_nacimiento,
-    nacionalidad,
-    pais_residencia
-  }) {
+  fillPassenger(passengerData, index = 0) {
 
-    if (sexo) {
-      cy.get('select[name*="gender"], [data-testid="gender"]')
-        .first()
-        .select(sexo);
-    }
+    cy.get('[data-testid="passenger-form"]')
+      .eq(index)
+      .within(() => {
 
-    if (nombres) {
-      cy.get('input[name*="first"], input[name*="name"], [data-testid="first-name"]')
-        .first()
-        .clear()
-        .type(nombres);
-    }
+        if (passengerData.sexo)
+          cy.get('select[name*="gender"]').select(passengerData.sexo);
 
-    if (apellidos) {
-      cy.get('input[name*="last"], input[name*="surname"], [data-testid="last-name"]')
-        .first()
-        .clear()
-        .type(apellidos);
-    }
+        if (passengerData.nombres)
+          cy.get('input[name*="first"]').clear().type(passengerData.nombres);
 
-    if (numero_documento) {
-      cy.get('input[name*="document"], input[name*="doc"], [data-testid="document"]')
-        .first()
-        .clear()
-        .type(numero_documento);
-    }
+        if (passengerData.apellidos)
+          cy.get('input[name*="last"]').clear().type(passengerData.apellidos);
 
-    if (fecha_nacimiento) {
-      cy.get('input[type="date"], [data-testid="birth-date"]')
-        .first()
-        .clear()
-        .type(fecha_nacimiento);
-    }
+        if (passengerData.numero_documento)
+          cy.get('input[name*="doc"]').clear().type(passengerData.numero_documento);
 
-    if (nacionalidad) {
-      cy.get('select[name*="nationality"], [data-testid="nationality"]')
-        .first()
-        .select(nacionalidad);
-    }
+        if (passengerData.fecha_nacimiento)
+          cy.get('input[type="date"]').clear().type(passengerData.fecha_nacimiento);
 
-    if (pais_residencia) {
-      cy.get('[data-testid="residence-country"], select[name*=pais]')
-        .first()
-        .select(pais_residencia);
-    }
+        if (passengerData.nacionalidad)
+          cy.get('select[name*="nationality"]').select(passengerData.nacionalidad);
+
+        if (passengerData.pais_residencia)
+          cy.get('select[name*="pais"]').select(passengerData.pais_residencia);
+
+      });
   }
 
   continue() {
-    cy.get('[data-testid="continue-button"], button[type="submit"], .continue')
+    cy.get('[data-testid="continue-button"], button[type="submit"]')
       .first()
       .click();
   }
