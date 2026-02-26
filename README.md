@@ -91,7 +91,6 @@ git clone [https://github.com/tu-usuario/tu-repo.git](https://github.com/paolajp
 git clone https://github.com/paolajpco/Quality-Control-Engineer-_-Prueba-T-cnica
 ```
 
-> 🔁 *Reemplaza `tu-usuario/tu-repo` por el enlace real al repositorio.*
 
 ---
 
