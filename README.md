@@ -145,16 +145,29 @@ Esto ejecuta todas las pruebas en la consola y genera un reporte de resultados.
 
 ---
 
-## 📄 Contribuciones
+## 📄 Lectura de Resultados
 
-Si deseas agregar más casos de prueba o mejorar la automatización, puedes:
+| Código HTTP | Nombre del Estado     | Qué significa                      | Resultado esperado en prueba     | Ejemplo en Cypress                   |
+| ----------- | --------------------- | ---------------------------------- | -------------------------------- | ------------------------------------ |
+| 200         | OK                    | La solicitud fue exitosa           | ✅ La prueba debe pasar           | `expect(response.status).to.eq(200)` |
+| 201         | Created               | Recurso creado exitosamente        | ✅ Validar creación               | `expect(response.status).to.eq(201)` |
+| 204         | No Content            | Éxito sin contenido en respuesta   | ✅ Validar que body esté vacío    | `expect(response.body).to.be.empty`  |
+| 400         | Bad Request           | Error en datos enviados            | ⚠️ Validar mensaje de error      | `expect(response.status).to.eq(400)` |
+| 401         | Unauthorized          | No autenticado                     | ❌ Validar que no permita acceso  | `expect(response.status).to.eq(401)` |
+| 403         | Forbidden             | No tiene permisos                  | ❌ Validar control de acceso      | `expect(response.status).to.eq(403)` |
+| 404         | Not Found             | Recurso no existe                  | ❌ Validar manejo de error        | `expect(response.status).to.eq(404)` |
+| 405         | Method Not Allowed    | Método HTTP incorrecto             | ❌ Validar restricción de método  | `expect(response.status).to.eq(405)` |
+| 409         | Conflict              | Conflicto (ej: registro duplicado) | ⚠️ Validar mensaje de conflicto  | `expect(response.status).to.eq(409)` |
+| 422         | Unprocessable Entity  | Error de validación de datos       | ⚠️ Validar estructura de errores | `expect(response.status).to.eq(422)` |
+| 500         | Internal Server Error | Error del servidor                 | ❌ Detectar fallo backend         | `expect(response.status).to.eq(500)` |
+| 503         | Service Unavailable   | Servicio no disponible             | ❌ Validar reintentos o fallback  | `expect(response.status).to.eq(503)` |
 
-1. Crear un *branch* nuevo.
-2. Agregar/actualizar tu prueba y documentación.
-3. Abrir un *pull request* con tu propuesta.
 
----
-
+Para esta prueba eb pagina de ambiente productivo obtuvimos como respuesta
+| 401         | Unauthorized          | No autenticado                     | ❌ Validar que no permita acceso  | `expect(response.status).to.eq(401)` |
+<img width="1882" height="817" alt="image" src="https://github.com/user-attachments/assets/d1266127-023a-4f9e-893f-38ec48ecf252" />
+URL ADJUNTO  CAPTURA DE IMAGEN DE PPRUEBA DE LA EJECUCIÓN:
+https://github.com/user-attachments/assets/d1266127-023a-4f9e-893f-38ec48ecf252 
 
 
 
