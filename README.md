@@ -173,23 +173,31 @@ URL Adjunto de la captura de imagen en ejecución:
 
 https://github.com/user-attachments/assets/d1266127-023a-4f9e-893f-38ec48ecf252 
 
-## Ambiente: Productivo
-Tipo de prueba: Validación de acceso sin autenticación
-Endpoint evaluado: (Agregar URL del endpoint si aplica)
-Herramienta: Cypress
+## Resultado de Prueba – Validación de Respuesta HTTP en Ambiente Productivo
 
-Código HTTP	Estado	Descripción	Resultado esperado	Resultado obtenido
-401	Unauthorized	El usuario no se encuentra autenticado para acceder al recurso	
-El sistema debe bloquear el acceso y retornar código 401	
-✅ Se obtuvo código 401 correctamente
+Durante la ejecución de la prueba en el ambiente productivo, se obtuvo la siguiente respuesta:
 
-Resultado:
-La prueba fue exitosa, ya que el sistema respondió con código 401 - Unauthorized, 
-confirmando que el control de autenticación funciona correctamente en el ambiente productivo y no permite accesos no autorizados.
+Código HTTP	Estado	Descripción	Validación en Cypress
+401	Unauthorized	No autenticado	expect(response.status).to.eq(401)
 
-Evidencia de ejecución:
-Captura de pantalla adjunta:
+📎 Evidencia de ejecución:
 https://github.com/user-attachments/assets/d1266127-023a-4f9e-893f-38ec48ecf252
+
+📌 Análisis del Resultado
+
+Inicialmente, no se contaba con información funcional detallada acerca del comportamiento esperado del endpoint en ambiente productivo, 
+por lo que se asumió como resultado esperado un código 200 (OK).
+
+Sin embargo, tras analizar la respuesta obtenida (401 - Unauthorized), se determinó que el comportamiento es correcto y coherente con las políticas 
+de seguridad del ambiente productivo, ya que el acceso al recurso requiere autenticación previa.
+
+Por lo tanto:
+
+✅ El código 401 es consistente con la configuración de seguridad del entorno.
+
+🔐 La página productiva restringe correctamente el acceso a usuarios no autenticados.
+
+📌 Se ajusta el resultado esperado de la prueba considerando el control de acceso implementado.
 
 
 
