@@ -1,4 +1,3 @@
-# Quality Control Engineer _ Prueba Técnica
 
 
 # Prueba Técnica – Automatización de selección de vuelos con Cypress
