@@ -162,12 +162,30 @@ Esto ejecuta todas las pruebas en la consola y genera un reporte de resultados.
 | 500         | Internal Server Error | Error del servidor                 | ❌ Detectar fallo backend         | `expect(response.status).to.eq(500)` |
 | 503         | Service Unavailable   | Servicio no disponible             | ❌ Validar reintentos o fallback  | `expect(response.status).to.eq(503)` |
 
-
+## Resultado
 Para esta prueba eb pagina de ambiente productivo obtuvimos como respuesta
 | 401         | Unauthorized          | No autenticado                     | ❌ Validar que no permita acceso  | `expect(response.status).to.eq(401)` |
 <img width="1882" height="817" alt="image" src="https://github.com/user-attachments/assets/d1266127-023a-4f9e-893f-38ec48ecf252" />
 URL ADJUNTO  CAPTURA DE IMAGEN DE PPRUEBA DE LA EJECUCIÓN:
 https://github.com/user-attachments/assets/d1266127-023a-4f9e-893f-38ec48ecf252 
+
+Ambiente: Productivo
+Tipo de prueba: Validación de acceso sin autenticación
+Endpoint evaluado: (Agregar URL del endpoint si aplica)
+Herramienta: Cypress
+
+Código HTTP	Estado	Descripción	Resultado esperado	Resultado obtenido
+401	Unauthorized	El usuario no se encuentra autenticado para acceder al recurso	
+El sistema debe bloquear el acceso y retornar código 401	
+✅ Se obtuvo código 401 correctamente
+
+Resultado:
+La prueba fue exitosa, ya que el sistema respondió con código 401 - Unauthorized, 
+confirmando que el control de autenticación funciona correctamente en el ambiente productivo y no permite accesos no autorizados.
+
+Evidencia de ejecución:
+Captura de pantalla adjunta:
+https://github.com/user-attachments/assets/d1266127-023a-4f9e-893f-38ec48ecf252
 
 
 
