@@ -189,7 +189,7 @@ Inicialmente, no se contaba con información funcional detallada acerca del comp
 por lo que se asumió como resultado esperado un código 200 (OK).
 
 Sin embargo, tras analizar la respuesta obtenida (401 - Unauthorized), se determinó que el comportamiento es correcto y coherente con las políticas 
-de seguridad del ambiente productivo, ya que el acceso al recurso requiere autenticación previa.
+de seguridad que debe implementar el ambiente prductivo.
 
 Por lo tanto:
 
