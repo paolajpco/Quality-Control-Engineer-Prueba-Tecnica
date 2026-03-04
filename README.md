@@ -169,9 +169,6 @@ Para esta prueba en pagina de ambiente productivo obtuvimos como respuesta
 
 <img width="1882" height="817" alt="image" src="https://github.com/user-attachments/assets/d1266127-023a-4f9e-893f-38ec48ecf252" />
 
-URL Adjunto de la captura de imagen en ejecución:
-
-https://github.com/user-attachments/assets/d1266127-023a-4f9e-893f-38ec48ecf252 
 
 ## Resultado de Prueba – Validación de Respuesta HTTP en Ambiente Productivo
 
