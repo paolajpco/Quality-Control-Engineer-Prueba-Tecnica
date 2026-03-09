@@ -1,6 +1,7 @@
 
 
-# Prueba Técnica – Automatización de selección de vuelos con Cypress
+# Prueba Técnica
+– Automatización de selección de vuelos con Cypress
 
 Este repositorio contiene una **automatización con Cypress y JavaScript** para validar el flujo de selección de vuelo de ida y vuelo Bogotá – Cali, ida y regreso para dos adultos, donde la fecha de regreso es en un mes diferente a la fecha de ida. La automatización está diseñada para **verificar el correcto funcionamiento** de esta parte del sistema en una aplicación web de reservas de vuelos.
 
