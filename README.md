@@ -52,6 +52,11 @@ Este proyecto usa:
 Quality-Control-Engineer-_-Prueba-T-cnica/
 │
 ├── cypress/
+├── docs/
+│   │   ├── Estrategia_Pruebas.md
+│   │   ├── Test_Plan.md
+│   │   └── Matriz_Trazabilidad.xlsx
+│   │   └── Evidencias_Pruebas.md
 │   ├── test/
 │   │   └── searchFlight.cy.js
 │   │
