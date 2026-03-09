@@ -52,7 +52,7 @@ Este proyecto usa:
 Quality-Control-Engineer-_-Prueba-T-cnica/
 │
 ├── cypress/
-│   ├── e2e/
+│   ├── test/
 │   │   └── searchFlight.cy.js
 │   │
 │   ├── pages/
@@ -60,7 +60,7 @@ Quality-Control-Engineer-_-Prueba-T-cnica/
 │   │   ├── resultsPage.js
 │   │   └── passengerPage.js
 │   │
-│   ├── fixtures/
+│   ├── data/
 │   │   └── passengerData.json
 │   │
 │   └── support/
