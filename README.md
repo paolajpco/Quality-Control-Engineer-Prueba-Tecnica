@@ -201,5 +201,14 @@ Por lo tanto:
 
 📌 Se ajusta el resultado esperado de la prueba considerando el control de acceso implementado.
 
+## Oportunidades de mejora
 
+## Oportunidades de Mejora
 
+* **Estrategia de Branching:** Implementar Git Flow o Trunk Based Development para una mejor gestión de cambios y versiones.
+* **CI/CD:** Automatizar la ejecución de pruebas, validaciones y despliegues mediante pipelines.
+* **Automatización de Pruebas:** Incrementar la cobertura de pruebas funcionales, de API y regresión.
+* **Quality Gates:** Definir criterios mínimos de calidad antes de aprobar cambios.
+* **Trazabilidad:** Relacionar requerimientos, casos de prueba, defectos y evidencias.
+* **Pruebas No Funcionales:** Incluir pruebas de rendimiento, seguridad y accesibilidad.
+* **Métricas de Calidad:** Monitorear cobertura, defectos y resultados de ejecución para apoyar la mejora continua.
