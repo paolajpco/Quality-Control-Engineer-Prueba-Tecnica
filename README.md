@@ -201,7 +201,6 @@ Por lo tanto:
 
 📌 Se ajusta el resultado esperado de la prueba considerando el control de acceso implementado.
 
-## Oportunidades de mejora
 
 ## Oportunidades de Mejora
 
